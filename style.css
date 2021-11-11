@@ -1,0 +1,43 @@
+/*stylesheet for etch-a-sketch*/
+body{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container {
+    display:flex;
+    width:960px;
+    height:960px;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items:flex-start;
+    
+}
+
+.boxes {
+ /*   width:60px;
+    height:60px;
+*/    flex-shrink:0;
+    background-color: gray;
+       
+}
+.hovered {
+    background-color: black;
+}
+
+#header {
+    height:100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn {
+    padding: 15px;
+    font-size: 30px;
+    background-color: rgb(175, 210, 211);
+    border: 3px solid black;
+    border-radius: 10px;
+}

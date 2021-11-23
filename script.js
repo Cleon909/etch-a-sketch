@@ -42,17 +42,21 @@ function getInput() {
     for (i=0; i<size*size; i++) {
         let box = document.createElement('div');  
         box.className = "boxes"; box.style.height = s;box.style.width =s; 
-        box.addEventListener('mouseenter', function() {box.classList.add('hovered')})
+        // box.addEventListener('mouseenter', function() {box.classList.add('hovered')})
+        box.addEventListener('mouseenter', function() {
+            let r = Math.floor(Math.random()*255)
+            let b = Math.floor(Math.random()*255)
+            let g = Math.floor(Math.random()*255)
+            let rgb = "rgb(" + r + ", " + g + ", " + b + ")"; 
+            box.style.background = rgb})
         container.appendChild(box);
+
     }
 }
 
 
 
 //prompt();
-
-
-
 
 
 
@@ -68,6 +72,3 @@ function getInput() {
 //   box[i].id = 'box'+[i];
    
 //}
-
-
-
